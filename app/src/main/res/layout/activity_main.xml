@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:verticalScrollbarPosition="defaultPosition"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/enable_button"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="159dp"
+        android:text="@string/enable" />
+
+    <Button
+        android:id="@+id/disable_button"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="257dp"
+        android:layout_marginEnd="0dp"
+        android:text="@string/disable" />
+
+    <EditText
+        android:id="@+id/userNumber"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="370dp"
+        android:backgroundTint="#FBF9F9"
+        android:ems="10"
+        android:hint="Enter Your number here."
+        android:inputType="phone"
+        android:textAlignment="center"
+        android:textColor="#FDF6F6"
+        android:textColorHint="#F6F2F2" />
+
+    <EditText
+        android:id="@+id/emergencyNumber1"
+        android:layout_width="415dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/emergencyNumber2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="-4dp"
+        android:layout_marginBottom="46dp"
+        android:backgroundTint="#F6EFEF"
+        android:ems="10"
+        android:hint="Emergency Number 1"
+        android:inputType="phone"
+        android:textAlignment="center"
+        android:textColor="#FBF6F6"
+        android:textColorHint="#FDFCFC" />
+
+    <EditText
+        android:id="@+id/emergencyNumber2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/emergencyNumber3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="-3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="70dp"
+        android:backgroundTint="#EFE9E9"
+        android:ems="10"
+        android:hint="Emergency Number 2"
+        android:inputType="phone"
+        android:textAlignment="center"
+        android:textColor="#FDF9F9"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/emergencyNumber3"
+        android:layout_width="415dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="-4dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="98dp"
+        android:backgroundTint="#EAE4E4"
+        android:ems="10"
+        android:hint="Emergency Number 3"
+        android:inputType="phone"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="38dp"
+        android:text="SOS Application"
+        android:textAlignment="center"
+        android:textColor="#F80404"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+</RelativeLayout>
